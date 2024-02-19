@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/vikingteksti"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="casual"
+        android:text="@string/vikingTeksti"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/vikingnumerot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lottonumerot"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <LinearLayout
+        android:id="@+id/EJnumerot"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/lotto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/EJteksti">
+
+        <TextView
+            android:id="@+id/ej1"
+            android:layout_width="101px"
+            android:layout_height="101px"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/pawwo3"
+            android:fontFamily="monospace"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/ej2"
+            android:layout_width="101px"
+            android:layout_height="101px"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/pawwo3"
+            android:fontFamily="monospace"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/ej3"
+            android:layout_width="101px"
+            android:layout_height="101px"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/pawwo3"
+            android:fontFamily="monospace"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/ej4"
+            android:layout_width="101px"
+            android:layout_height="101px"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/pawwo3"
+            android:fontFamily="monospace"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/ej5"
+            android:layout_width="101px"
+            android:layout_height="101px"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/pawwo3"
+            android:fontFamily="monospace"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/ejt1"
+            android:layout_width="101px"
+            android:layout_height="101px"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/pawwo3"
+            android:fontFamily="monospace"
+            android:textAlignment="center"
+            android:textColor="@color/design_default_color_error"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/ejt2"
+            android:layout_width="101px"
+            android:layout_height="101px"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/pawwo3"
+            android:fontFamily="monospace"
+            android:textAlignment="center"
+            android:textColor="@color/design_default_color_error"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/eurojaska"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="@color/napit"
+        android:fontFamily="monospace"
+        android:onClick="nappiViking"
+        android:text="@string/luoEurojaska"
+        android:textSize="27sp"
+        app:layout_constraintBottom_toTopOf="@id/molemmat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vikinglotto"
+        app:strokeColor="@color/black"
+        app:strokeWidth="20px" />
+
+    <TextView
+        android:id="@+id/otsikko"
+        android:layout_width="413dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/napit"
+        android:fontFamily="casual"
+        android:padding="8dp"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/lottoteksti"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/lottoteksti"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="81dp"
+        android:fontFamily="casual"
+        android:text="@string/lottoTeksti"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/lottonumerot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/otsikko" />
+
+    <TextView
+        android:id="@+id/EJteksti"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="casual"
+        android:text="@string/lottoEJteksti"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/EJnumerot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vikingnumerot"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <LinearLayout
+        android:id="@+id/lottonumerot"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/vikingteksti"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lottoteksti">
+
+        <TextView
+            android:id="@+id/lotto1"
+            android:layout_width="101px"
+            android:layout_height="101px"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/pawwol"
+            android:fontFamily="monospace"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/lotto2"
+            android:layout_width="101px"
+            android:layout_height="101px"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/pawwol"
+            android:fontFamily="monospace"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/lotto3"
+            android:layout_width="101px"
+            android:layout_height="101px"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/pawwol"
+            android:fontFamily="monospace"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/lotto4"
+            android:layout_width="101px"
+            android:layout_height="101px"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/pawwol"
+            android:fontFamily="monospace"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/lotto5"
+            android:layout_width="101px"
+            android:layout_height="101px"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/pawwol"
+            android:fontFamily="monospace"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/lotto6"
+            android:layout_width="101px"
+            android:layout_height="101px"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/pawwol"
+            android:fontFamily="monospace"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/lotto7"
+            android:layout_width="101px"
+            android:layout_height="101px"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/pawwol"
+            android:fontFamily="monospace"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/lottolis"
+            android:layout_width="101px"
+            android:layout_height="101px"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/pawwol"
+            android:fontFamily="monospace"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/vikingnumerot"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/EJteksti"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vikingteksti">
+
+        <TextView
+            android:id="@+id/viking1"
+            android:layout_width="101px"
+            android:layout_height="101px"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/pawwov"
+            android:fontFamily="monospace"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/viking2"
+            android:layout_width="101px"
+            android:layout_height="101px"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/pawwov"
+            android:fontFamily="monospace"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/viking3"
+            android:layout_width="101px"
+            android:layout_height="101px"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/pawwov"
+            android:fontFamily="monospace"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/viking4"
+            android:layout_width="101px"
+            android:layout_height="101px"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/pawwov"
+            android:fontFamily="monospace"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/viking5"
+            android:layout_width="101px"
+            android:layout_height="101px"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/pawwov"
+            android:fontFamily="monospace"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/viking6"
+            android:layout_width="101px"
+            android:layout_height="101px"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/pawwov"
+            android:fontFamily="monospace"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/vikingviking"
+            android:layout_width="101px"
+            android:layout_height="101px"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/pawwov"
+            android:fontFamily="monospace"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/vikingplus"
+            android:layout_width="101px"
+            android:layout_height="101px"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/pawwov"
+            android:fontFamily="monospace"
+            android:textAlignment="center"
+            android:textColor="@color/design_default_color_error"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/lotto"
+        android:layout_width="350dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:layout_margin="24dp"
+
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="81dp"
+        android:backgroundTint="#40a1c2"
+        android:fontFamily="monospace"
+        android:onClick="nappiLotto"
+        android:padding="8dp"
+        android:text="@string/luoLotto"
+        android:textColor="@android:color/white"
+        android:textSize="27sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/EJnumerot"
+        app:strokeColor="@color/black"
+        app:strokeWidth="20px" />
+
+    <Button
+        android:id="@+id/vikinglotto"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="@color/napit"
+        android:fontFamily="monospace"
+        android:onClick="nappiViking"
+        android:text="@string/luoViikkari"
+        android:textSize="27sp"
+        app:layout_constraintBottom_toTopOf="@id/eurojaska"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lotto"
+        app:strokeColor="@color/black"
+        app:strokeWidth="20px" />
+
+    <Button
+        android:id="@+id/molemmat"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="@color/napit"
+        android:fontFamily="monospace"
+        android:onClick="nappiMolemmat"
+        android:text="@string/luoMolemmat"
+        android:textSize="27sp"
+        app:layout_constraintBottom_toTopOf="@id/tyhjenna"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vikinglotto"
+        app:strokeWidth="20px"
+        tools:strokeColor="@color/black" />
+
+    <Button
+        android:id="@+id/tyhjenna"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="81dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/napit"
+        android:fontFamily="monospace"
+        android:onClick="nappiTyhjenna"
+        android:text="@string/tyhjenna"
+        android:textSize="27sp"
+        app:layout_constraintBottom_toTopOf="@id/molemmat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/molemmat"
+        app:strokeWidth="20px"
+        tools:strokeColor="@color/black" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

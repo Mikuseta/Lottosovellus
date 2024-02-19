@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Lottosovellus</string>
+    <string name="luoLotto">Lotto</string>
+    <string name="luoViikkari">Vikinglotto</string>
+    <string name="luoMolemmat">Luo kaikki</string>
+    <string name="tyhjenna">Tyhjennä</string>
+    <string name="lottoTeksti">Lottonumerot:</string>
+    <string name="vikingTeksti">Vikinglottonumerot:</string>
+    <string name="luoEurojaska">Eurojackpot</string>
+    <string name="lottoEJteksti">Eurojackpot::</string>
+</resources>
